@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - prints all possible different combinations of three digits
+ * main - Entry point
  * Return: Always 0
  */
 
@@ -27,6 +27,8 @@ int main(void)
 	putchar(q);
 	if (d == '7' && p == '8')
 	continue;
+	putchar(',');
+	putchar(' ');
 	}
 	}
 	}
