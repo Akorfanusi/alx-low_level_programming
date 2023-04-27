@@ -3,7 +3,7 @@
 /**
  * print_square - prints n squares according to n number of times
  * @size: the number of squares/number of times
- * Return: empty
+ * Return: void
  */
 
 void print_square(int size)
@@ -15,10 +15,10 @@ void print_square(int size)
 
 		for (x = 0; x < size; x++)
 		{
-			for (y = 0; y < size; y++)
+			for (y = 0; y < (size); y++)
 			{
 				_putchar('#');
 			}
-				_putchar('\n');
+			_putchar('\n');
 		}
 }
