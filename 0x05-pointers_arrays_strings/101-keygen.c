@@ -4,13 +4,13 @@
 
 /**
  * main - generates random passwords for the
- * program 101-cracker
+ * program 101-crackme
  * Return: Always 0
  */
 
 int main(void)
 {
-	char password[04];
+	char password[84];
 	int index = 0, sum = 0, diff_half1, diff_half2;
 
 	srand(time(0));
