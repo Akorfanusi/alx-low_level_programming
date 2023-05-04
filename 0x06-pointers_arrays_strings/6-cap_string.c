@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes words
- * @str: string
+ * cap_string - capitalizes all words of a string
+ * @str: the string to be capitlize
  * Return: pointer to string
  */
+
 char *cap_string(char *str)
 {
 	int i = 0;
