@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * main - prints the sum of ards positive numbers
+ * main - prints the sum of args positive numbers
  * @argc: argument count
  * @argv: argument vector
  * Return: Aways 0
@@ -34,6 +34,10 @@ int main(int argc, char *argv[])
 			e++;
 		}
 		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("0\n");
 	}
 
 	return (0);
