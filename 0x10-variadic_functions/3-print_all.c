@@ -46,4 +46,3 @@ void print_all(const char * const format, ...)
 	ptintf("\n");
 	va_end(list);
 }
-
