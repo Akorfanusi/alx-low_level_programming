@@ -31,7 +31,7 @@ void free_listint_t(listint_t **head)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nnodes = 0;
-	listint_t *hptr, *new, *add
+	listint_t *hptr, *new, *add;
 ;
 	hptr = NULL;
 	while (head != NULL)
