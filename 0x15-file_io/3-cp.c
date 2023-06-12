@@ -49,10 +49,10 @@ void close_file(int fd);
  * @argv: an array of pointers to the argments
  * Return: 0 on success
  *
- * Description: if the argumen count is incorrect - exit code 97
- * if file_from does not exist or cannot be read - exit code 98
- * if file_to cannot be created or written to - exit code 99
- * if file_to or file_from cannot be closed - exit code 100
+ * Description: if the argument count is incorrect - exit code 97
+ * If file_from does not exist or cannot be read - exit code 98
+ * If file_to cannot be created or written to - exit code 99
+ * If file_to or file_from cannot be closed - exit code 100
  */
 int main(int argc, char *argv[])
 {
@@ -80,9 +80,10 @@ int main(int argc, char *argv[])
 		}
 
 		w = write(to, buffer, r);
-		if (to == -1 || w == -1)
+			if (to == -1 || w == -1)
 			dprintf(STDERR_FILENO,
 				"Error: can't write to %s\n", argv[2]);
+
 			free(buffer);
 			exit(99);
 	}
@@ -90,7 +91,7 @@ int main(int argc, char *argv[])
 	r = read(from, buffer, 1024);
 	to = open(argv[2], O_WRONLY | O_APPEND);
 
-	} while (r >  0);
+	} while (r > 0);
 
 	free(buffer);
 	close_file(from);
