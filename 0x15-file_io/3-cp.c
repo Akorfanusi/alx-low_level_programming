@@ -24,9 +24,9 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
- * main - copies the contents of a file to aother file
- * @argc: the number of argumenys spplied to the program
- * @argv: an array of pointers to the argments
+ * main - check the code for Holberton school student
+ * @argc: the number of arguments spplied to the program
+ * @argv: arguments vector
  * Return: 0 on success
  */
 int main(int argc, char *argv[])
